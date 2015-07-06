@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON To Tree</title>
+    <meta name="description" content="JSON To Tree Implementation">
+    <meta name="author" content="Saurshaz">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <script src="jsontotree.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="padding-top: 30px">
+            <div class="col-md-10 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label class="" for="exampleInputEmail3">JSON Input</label>
+                    </div>
+                    <div class="col-md-9 has-error">
+                        <textarea id="json_text" style="height:200px" class="col-md-12" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="json_submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top:20px" id="json_error" class="row col-md-7 col-md-offset-5 hidden">
+            <div class="error">JSON Input is not invalid</div>
+        </div>
+        <div id="json_render" style="padding-top:50px" class="row col-md-8 col-md-offset-4">
+        </div>
+    </div>
+</body>
+
+</html>
